@@ -61,6 +61,7 @@ public class BooksController implements Initializable {
         txtYear.clear();
 
         loadData(bookDto);
+        System.out.println("table view success");
     }
 
     @FXML
