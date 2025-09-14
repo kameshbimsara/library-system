@@ -53,6 +53,8 @@ public class BarrowController {
         BarrowService service = new BarrowServiceImpl();
         int add = service.addBarrow(dto);
 
+        System.out.println("book barrow success");
+
     }
 
     @FXML
