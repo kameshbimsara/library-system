@@ -69,6 +69,8 @@ public class BarrowController {
         txtAuthor.setText(searchBook.getAuthor());
         txtYear.setText(String.valueOf(searchBook.getYear()));
 
+        System.out.println("show to book details");
+
     }
 
     @FXML
