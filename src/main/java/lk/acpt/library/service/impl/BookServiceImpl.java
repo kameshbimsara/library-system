@@ -26,6 +26,12 @@ public class BookServiceImpl implements BookService {
             //execute/run query
             int i = preparedStatement.executeUpdate();//return type eka int nisa int ekak controller eket return karanawa
 
+            if (i > 0) {
+                System.out.println("book add success");
+            }else {
+                System.out.println("not book add");
+            }
+
             return i;
 
         } catch (ClassNotFoundException e) {
@@ -46,6 +52,12 @@ public class BookServiceImpl implements BookService {
             preparedStatement.setObject(1, id );
 
             int i = preparedStatement.executeUpdate();
+
+            if (i>0){
+                System.out.println("book delete success");
+            }else {
+                System.out.println("book delete not success");
+            }
 
             return i;
 

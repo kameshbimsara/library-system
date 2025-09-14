@@ -117,6 +117,8 @@ public class MemberController implements Initializable {
 
         tblMember.setItems(FXCollections.observableList(lord));
 
+        System.out.println("member lord sucess");
+
     }
 
 }
