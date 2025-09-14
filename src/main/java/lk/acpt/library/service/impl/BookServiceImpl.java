@@ -47,6 +47,12 @@ public class BookServiceImpl implements BookService {
 
             int i = preparedStatement.executeUpdate();
 
+            if (i>0){
+                System.out.println("book delete success");
+            }else {
+                System.out.println("book delete not success");
+            }
+
             return i;
 
         } catch (ClassNotFoundException e) {
