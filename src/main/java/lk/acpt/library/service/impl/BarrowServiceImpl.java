@@ -41,6 +41,7 @@ public class BarrowServiceImpl implements BarrowService {
                     connection.commit();
                 }else {
                     connection.rollback();
+                    System.out.println("Barrow book note add");
                 }
 
             }
